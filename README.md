@@ -1,7 +1,6 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="logo.png" alt="logo" width="140"  height="auto" />
   <br/>
   <h3><b>Adeniyi Aderounmu | Ulises Cappa - Microverse Student</b></h3>
 </div>
@@ -148,6 +147,6 @@ professional.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENCE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
