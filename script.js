@@ -21,8 +21,10 @@ class BookStorage {
       this.data.forEach((element) => {
         element.id = idBook;
         bookList.innerHTML += `<li class="list-item">
-                                    <p>${element.bookTitle}</p>
-                                    <p>${element.bookAuthor}</p>
+                                    <div class="title-container">
+                                    <p id="titlep">${element.bookTitle}</p>
+                                    <p id="authorp">by ${element.bookAuthor}</p>
+                                    </div>
                                     <button class="delete" data-id="${element.id}">Remove</button>
                                     <hr/>
                                     </li>

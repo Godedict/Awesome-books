@@ -1,3 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .book-ul {
   padding: 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  width: 100%;
+}
+
+.title-container {
+  display: flex;
+  width: fit-content;
+}
+
+#titlep {
+  padding-right: 4%;
+}
+
+#authorp {
+  display: flex;
+}
+
+.delete {
 }
