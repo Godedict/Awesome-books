@@ -12,10 +12,7 @@ class BookStorage {
 
     removeData(id) {
       this.data = this.data.filter((book) => book.id !== id);
-      console.log(this.data);
       this.displayData();
-
-      // console.log(this.data[id].id);
     }
 
     displayData() {
@@ -52,7 +49,6 @@ form.addEventListener('submit', (event) => {
   const title = document.querySelector('#title');
   const author = document.querySelector('#author');
 
-  // let b = new Book(title.value, author.value)
   storage.createBook(title.value, author.value);
   storage.displayData();
 });
