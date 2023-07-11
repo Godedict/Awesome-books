@@ -66,11 +66,6 @@ As well as knowing how to manipulate information but, more importantly, how to c
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<div align="center">
-  <h3><b>Design Preview</b></h3>
-  <br/>
-  <img src="./resources/images/preview.png" alt="Design Preview Screenshot" style="object-fit:cover;"/>
-</div>
 
 ### Take a Look
 
