@@ -1,64 +1,52 @@
-// check local storage is empty then create an empty array
-if (localStorage.getItem('Added Books') == null) {
-  localStorage.setItem('Added Books', JSON.stringify([]));
+const form = document.querySelector('.add-form');
+const bookList = document.querySelector('.book-list');
+const remove = document.querySelector('.remove')
+
+// BookStorage class
+
+class BookStorage {
+    constructor(){
+        this.data = []
+    }
+
+    addData(book){
+        this.data.push(book)
+    }
+
+    removeData(id){
+        this.data = this.data.filter(book => book.id != id);
+        console.log(this.data);
+        this.displayData()
+        
+        console.log(this.data[id].id);
+    }
+
+    displayData(){
+        let idBook = 0
+        bookList.innerHTML = ``;
+        this.data.forEach(element =>  {
+            element.id = idBook
+            bookList.innerHTML += `<li class="list-item">
+                                    <p>${element.bookTitle}</p>
+                                    <p>${element.bookAuthor}</p>
+                                    <button class="delete" data-id="${element.id}">Remove</button>
+                                    <hr/>
+                                    </li>
+    `
+    idBook++;
+        });
+    }
 }
 
-// store data in local storage
-const storeData = JSON.parse(localStorage.getItem('Added Books'));
+// Book class
 
-function updateData() {
-  localStorage.setItem('Added Books', JSON.stringify(storeData));
+class Book {
+    constructor(bookTitle, bookAuthor){
+        this.id
+        this.bookTitle = bookTitle
+        this.bookAuthor = bookAuthor
+    }
+
 }
-
-function createBooks(arr) {
-  let books = '';
-
-  for (let i = 0; i < arr.length; i += 1) {
-    books += `
-      <p>${arr[i].title}</p>
-      <p>${arr[i].author}</p>
-      <button onclick="removeBook(${i})">Remove</button>
-      <hr/>
-    `;
-  }
-  return books;
-}
-
-// Dispaly books in the table
-function displayBooks() {
-  const listOfBooks = document.querySelector('.container');
-  listOfBooks.innerHTML = `
-             <ul class="book-ul"/>
-              ${createBooks(storeData)}</ul>
-  `;
-}
-
-// Add new book to the list
-function addNewData(title, author) {
-  const newBook = {
-    title,
-    author,
-  };
-  storeData.push(newBook);
-  updateData();
-  displayBooks();
-}
-
-// Pull values from the form
-const form = document.querySelector('form');
-form.addEventListener('submit', (e) => {
-  const title = document.querySelector('.title');
-  const author = document.querySelector('.author');
-  e.preventDefault();
-  addNewData(title.value, author.value);
-});
-
-// Remove book from the list
-function removeBook(index) {
-  storeData.splice(index, 1);
-  updateData();
-  displayBooks();
-}
-removeBook();
-
-window.onload = displayBooks();
+// Creating data storage
+let storage = new BookStorage()
