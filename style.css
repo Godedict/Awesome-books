@@ -39,3 +39,9 @@
 .delete {
   width: 30%;
 }
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
