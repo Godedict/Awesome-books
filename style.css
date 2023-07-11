@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.heading {
+  margin: 1rem;
+}
+
 .book-ul {
   padding: 0;
 }
@@ -11,12 +15,11 @@
   display: flex;
   justify-content: space-between;
   gap: 5%;
-  width: 100%;
 }
 
 .title-container {
   display: flex;
-  width: fit-content;
+  width: 70%;
 }
 
 #titlep {
@@ -28,4 +31,5 @@
 }
 
 .delete {
+  width: 30%;
 }

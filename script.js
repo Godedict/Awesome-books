@@ -26,7 +26,6 @@ class BookStorage {
                                     <p id="authorp">by ${element.bookAuthor}</p>
                                     </div>
                                     <button class="delete" data-id="${element.id}">Remove</button>
-                                    <hr/>
                                     </li>
     `;
         idBook += 1;
