@@ -44,17 +44,6 @@ class BookStorage {
     }
 }
 
-// Book class
-
-// class Book {
-//     constructor(bookTitle, bookAuthor){
-//         this.id
-//         this.bookTitle = bookTitle
-//         this.bookAuthor = bookAuthor
-//     }
-
-// }
-// Creating data storage
 const storage = new BookStorage();
 
 // Button listeners
