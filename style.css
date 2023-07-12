@@ -58,7 +58,7 @@ body {
   padding: 2rem 0;
 }
 
-.book-list{
+.book-list {
   border: 2px solid #444;
   width: 90%;
   margin-left: 4.5%;
@@ -174,11 +174,17 @@ input[type="text"] {
   width: fit-content;
   padding: 0.25rem;
   box-shadow: 2px 2px 2px #444;
-  
+
 }
 
-.contact-detail-list {
-  list-style: none;
+.contact-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  font-size: 13px;
+  text-align: left;
 }
 
 .footer {
