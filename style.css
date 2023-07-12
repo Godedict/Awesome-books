@@ -15,7 +15,6 @@ body {
 }
 
 .heading {
-  margin: 1rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -39,6 +38,17 @@ body {
 
 .nav .list {
   display: flex;
+  box-sizing: border-box;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.list-item:nth-child(odd) {
+  background-color: #eee;
 }
 
 .nav .list-item:last-of-type {
@@ -65,18 +75,10 @@ body {
   border: 2px solid #444;
   width: 90%;
   margin-left: 4.5%;
-  
 }
 
 .book-ul {
   padding: 0;
-}
-
-.list-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 2%;
-
 }
 
 #add-new-link {
@@ -85,10 +87,6 @@ body {
 
 .nav {
   padding: 0.5rem;
-}
-
-.list {
-  box-sizing: border-box;
 }
 
 .list a {
@@ -112,10 +110,6 @@ body {
   align-items: center;
   padding-left: 2px;
   padding-right: 2px;
-}
-
-.list-item:nth-child(odd) {
-  background-color: #eee;
 }
 
 .row .date {
@@ -178,7 +172,6 @@ input[type="text"] {
   width: fit-content;
   padding: 0.25rem;
   box-shadow: 2px 2px 2px #444;
-
 }
 
 .headline h1 {
