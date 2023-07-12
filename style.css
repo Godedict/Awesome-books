@@ -1,3 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.heading {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.heading h1 {
+  margin-bottom: 1rem;
+}
+
+.container-list {
+  display: flex;
+  justify-content: center;
+}
+
+.book-list {
+  border: 2px solid #444;
+  width: 90%;
+}
+
 .book-ul {
   padding: 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.list-item:nth-child(odd) {
+  background-color: #eee;
+}
+
+.title-container {
+  display: flex;
+  width: 70%;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete {
+  box-shadow: 2px 2px 4px #000;
+}
+
+.divider {
+  width: 30%;
+  height: 2.2rem;
+  align-self: center;
+}
+
+#titlep {
+  padding-right: 4%;
+}
+
+#authorp {
+  display: flex;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.7rem;
+}
+
+.div-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-form h2 {
+  margin-bottom: 1rem;
+}
+
+.add-btn {
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-self: end;
 }

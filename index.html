@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome-Books</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Awesome Book</h1>
-  <div class="container">
-
-
-  </div>
-  <hr>
-  <form id="form">
-    <input type="text" name="title" placeholder="Title" class="title"><br>
-    <input type="text" name="title" placeholder="Author" class="author"><br>
-    <button class="add-btn" type="submit">Add</button>
-  </form>
-  
+  <section class="heading">
+    <h1>All awesome Books</h1>
+    <div class="container-list">
+      <ul class="book-list">
+      </ul>
+    </div>
+    <img class="divider" src="images/pngwing.com.png" alt="">
+    <div class="div-form">
+      <h2>Add a new book</h2>
+      <form action="" class="add-form">
+        <input type="text" placeholder="Title" id="title" class="title-input">
+        <input type="text" placeholder="Author" id="author" class="author-input">
+        <button class="add-btn" type="submit">Add</button>
+      </form>
+    </div>
+  </section>
   <script src="script.js"></script>
 </body>
+
 </html>
