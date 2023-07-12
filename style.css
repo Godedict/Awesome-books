@@ -55,12 +55,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 2rem 0;
 }
 
 .book-list{
   border: 2px solid #444;
   width: 90%;
-  margin-left: 4%;
+  margin-left: 4.5%;
 }
 
 .book-ul {
