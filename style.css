@@ -66,6 +66,42 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 2%;
+
+}
+
+#add-new-link {
+  width: max-content;
+}
+
+.nav {
+  padding: 0.5rem;
+}
+
+.list {
+  box-sizing: border-box;
+}
+
+.list a {
+  display: flex;
+  text-decoration: none;
+  color: #444;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  width: max-content;
+  background-color: transparent;
+}
+
+.list-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .list-item:nth-child(odd) {
