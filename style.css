@@ -9,6 +9,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+#hide {
+  display: none;
+}
+
 .heading {
   margin: 1rem;
   display: flex;
@@ -49,8 +53,8 @@ body {
 
 .container-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-
 }
 
 .book-list{
@@ -108,6 +112,11 @@ body {
   background-color: #eee;
 }
 
+.date {
+  align-self: flex-end;
+  padding-right: 1rem;
+}
+
 .title-container {
   display: flex;
   width: 70%;
@@ -121,12 +130,6 @@ body {
 
 .delete {
   box-shadow: 2px 2px 4px #000;
-}
-
-.divider {
-  width: 30%;
-  height: 2.2rem;
-  align-self: center;
 }
 
 #titlep {

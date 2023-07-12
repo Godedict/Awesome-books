@@ -62,3 +62,12 @@ bookList.addEventListener('click', (event) => {
     storage.removeData(id);
   }
 });
+
+
+// Displayin pages
+
+const date = document.querySelector('.date');
+const displayDate = () => {
+  date.textContent = new Date().toLocaleString();
+};
+setInterval(displayDate, 1000);
