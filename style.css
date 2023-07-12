@@ -8,8 +8,8 @@
 }
 
 .book-list{
-  border: 1px solid black;
-  padding: 0.5rem;
+  border: 2px solid #444;
+  width: 96%;
 }
 
 .book-ul {
@@ -19,13 +19,22 @@
 .list-item {
   display: flex;
   justify-content: space-between;
-  gap: 5%;
-  padding-bottom: 3%;
+  padding: 2%;
+}
+
+.list-item:nth-child(odd) {
+  background-color: #eee;
 }
 
 .title-container {
   display: flex;
   width: 70%;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #titlep {
@@ -34,10 +43,6 @@
 
 #authorp {
   display: flex;
-}
-
-.delete {
-  width: 30%;
 }
 
 .add-form {
