@@ -37,6 +37,10 @@
   justify-content: center;
 }
 
+.delete {
+  box-shadow: 2px 2px 4px #000;
+}
+
 #titlep {
   padding-right: 4%;
 }
