@@ -15,6 +15,12 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 90%;
+  margin: 50px auto;
+  border: 2px solid #444;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 6px 6px 5px #707070;
 }
 
 .navbar {
@@ -32,7 +38,9 @@ body {
 }
 
 .heading h1 {
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #444;
+  padding-left: 0.5rem;
 }
 
 .container-list {
