@@ -83,17 +83,20 @@ document.addEventListener('DOMContentLoaded', () => {
     listSection.classList.remove('hide');
     addBookSection.classList.add('hide');
     contactSection.classList.add('hide');
+    listSection.classList.remove('container-list');
   });
 
   addNewLink.addEventListener('click', () => {
     listSection.classList.add('hide');
     addBookSection.classList.remove('hide');
     contactSection.classList.add('hide');
+    listSection.classList.remove('container-list');
   });
 
   contactLink.addEventListener('click', () => {
     listSection.classList.add('hide');
     addBookSection.classList.add('hide');
     contactSection.classList.remove('hide');
+    listSection.classList.remove('container-list');
   });
 });
