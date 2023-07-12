@@ -10,22 +10,61 @@
 </head>
 
 <body>
-  <section class="heading">
-    <h1>All awesome Books</h1>
-    <div class="container-list">
-      <ul class="book-list">
-      </ul>
-    </div>
-    <img class="divider" src="images/pngwing.com.png" alt="">
-    <div class="div-form">
-      <h2>Add a new book</h2>
-      <form action="" class="add-form">
-        <input type="text" placeholder="Title" id="title" class="title-input">
-        <input type="text" placeholder="Author" id="author" class="author-input">
-        <button class="add-btn" type="submit">Add</button>
-      </form>
-    </div>
-  </section>
+  <div class="heading">
+    <section>
+      <div class="row">
+        <div class="navbar">
+          <h1>Awesome Books</h1>
+          <nav class="nav">
+            <ul class="list">
+              <li class="list-items link" id="list-link"><a href="#list">Book List</a></li>
+              <span class="divider">|</span>
+              <li class="list-items link" id="add-new-link"><a href="#add-book">Add New</a></li>
+              <span class="divider">|</span>
+              <li class="list-items link" id="contact-link"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <p class="date"></p>
+      </div>
+
+      <div class="container-list hide">
+        <h2 class="list-title">All awesome books</h2>
+        <ul class="book-list">
+        </ul>
+      </div>
+      <div class="div-form hide">
+        <h2>Add a new book</h2>
+        <form action="" class="add-form">
+          <input type="text" placeholder="Title" id="title" class="title-input" required>
+          <input type="text" placeholder="Author" id="author" class="author-input" required>
+          <button class="add-btn" type="submit">Add</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact section hide" id="contact">
+      <div class="row contact-row">
+        <div class="headline">
+          <h1>Contact Information</h1>
+        </div>
+        <div class="text-content">
+          <p>Do you have any information or you just want to say 'Hello'<br>You can reach out to us.</p>
+          <ul class="contact-detail-list">
+            <li class="contact-detail-item">Our email: mail@mail.com</li>
+            <li class="contact-detail-item">Our Phone Number: 001234567890</li>
+            <li class="contact-detail-item">Our Address: 234 Main Street, New City, Best Country</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  <div class="row">
+
+  </div>
+  <footer class="footer">
+    <p>Copyright &copy;2022</p>
+  </footer>
+</div>
   <script src="script.js"></script>
 </body>
 
