@@ -111,10 +111,14 @@ Use at the end '--fix' to help you out with any error.
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Godedict**
-👤 **Ulises**
 
-- GitHub: [@rysth](https://github.com/godedict)
-- Linkedin: [@johnpalacios](https://www.linkedin.com/in/Aderounmu-adeniyi/)
+
+- GitHub: [@godedict](https://github.com/godedict)
+- Linkedin: [@adeniyi](https://www.linkedin.com/in/Aderounmu-adeniyi/)
+
+👤 **Ulises**
+- GitHub: [@ulises2607](https://github.com/ulises2607)
+- LinkedIn: [Cesar Ulises Cappa Subelza](https://www.linkedin.com/in/cesar-ulises-cappa-subelza/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
