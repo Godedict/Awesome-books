@@ -10,12 +10,14 @@
 </head>
 
 <body>
-  <section class="heading">
+  <div class="heading">
+  <section>
     <div class="row">
       <div class="navbar">
         <h1>Awesome Books</h1>
         <nav class="nav">
           <ul class="list">
+            <li class="list-items link" id="add-new-link"><a href="#add-book">List</a></li>
             <span class="divider">|</span>
             <li class="list-items link" id="add-new-link"><a href="#add-book">Add New</a></li>
             <span class="divider">|</span>
@@ -23,15 +25,15 @@
           </ul>
         </nav>
       </div>
+      <p class="date"></p>
     </div>
     
     <div class="container-list ">
-      <p class="date"></p>
       <h2 class="list-title">All awesome books</h2>
       <ul class="book-list">
       </ul>
     </div>
-    <div class="div-form" id="hide">
+    <div class="hide div-form">
       <h2>Add a new book</h2>
       <form action="" class="add-form">
         <input type="text" placeholder="Title" id="title" class="title-input">
@@ -62,6 +64,7 @@
   <footer class="footer">
     <p>Copyright &copy;2022</p>
   </footer>
+</div>
   <script src="script.js"></script>
 </body>
 

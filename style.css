@@ -9,7 +9,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-#hide {
+.hide {
   display: none;
 }
 
@@ -60,6 +60,7 @@ body {
 .book-list{
   border: 2px solid #444;
   width: 90%;
+  margin-left: 4%;
 }
 
 .book-ul {
@@ -112,8 +113,9 @@ body {
   background-color: #eee;
 }
 
-.date {
-  align-self: flex-end;
+.row .date {
+  display: flex;
+  justify-content: end;
   padding-right: 1rem;
 }
 
@@ -148,7 +150,7 @@ body {
 }
 
 .div-form {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -165,11 +167,23 @@ body {
   align-self: end;
 }
 
+.contact-detail-list {
+  list-style: none;
+}
 
+.footer {
+  margin: 0.5rem;
+  border: 2px solid #444;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  border-radius: 5px;
+}
 
 @media (min-width: 768px) {
   .heading {
-    width: 45%;
+    width: 60%;
   }
 
   .row {
