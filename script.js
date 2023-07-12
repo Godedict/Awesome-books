@@ -63,11 +63,37 @@ bookList.addEventListener('click', (event) => {
   }
 });
 
-
-// Displayin pages
+// Function to display date
 
 const date = document.querySelector('.date');
 const displayDate = () => {
   date.textContent = new Date().toLocaleString();
 };
 setInterval(displayDate, 1000);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const listLink = document.querySelector('#list-link');
+  const addNewLink = document.querySelector('#add-new-link');
+  const contactLink = document.querySelector('#contact-link');
+  const listSection = document.querySelector('.container-list');
+  const addBookSection = document.querySelector('.div-form');
+  const contactSection = document.querySelector('.contact');
+
+  listLink.addEventListener('click', () => {
+    listSection.classList.remove('hide');
+    addBookSection.classList.add('hide');
+    contactSection.classList.add('hide');
+  });
+
+  addNewLink.addEventListener('click', () => {
+    listSection.classList.add('hide');
+    addBookSection.classList.remove('hide');
+    contactSection.classList.add('hide');
+  });
+
+  contactLink.addEventListener('click', () => {
+    listSection.classList.add('hide');
+    addBookSection.classList.add('hide');
+    contactSection.classList.remove('hide');
+  });
+});
