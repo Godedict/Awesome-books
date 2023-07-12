@@ -24,10 +24,9 @@ body {
 .container-list {
   display: flex;
   justify-content: center;
-
 }
 
-.book-list{
+.book-list {
   border: 2px solid #444;
   width: 90%;
 }
@@ -98,4 +97,4 @@ body {
   display: flex;
   justify-content: center;
   align-self: end;
-} 
+}
